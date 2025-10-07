@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Control Flow, Loops, and Scope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; line-height: 1.4; }
+    h1 { margin-bottom: 0.25rem; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+    .row { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+    input { padding: 0.5rem; border: 1px solid #ccc; border-radius: 8px; width: 120px; }
+    button { padding: 0.5rem 0.8rem; border: 1px solid #222; background: #fff; border-radius: 10px; cursor: pointer; }
+    button:hover { background: #f4f4f4; }
+    pre { background: #0b1020; color: #03991c; padding: 1rem; border-radius: 10px; overflow: auto; min-height: 140px; }
+    small { color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Control Flow, Loops, and Scope</h1>
+  <small>Click the buttons to run each step. Results appear below.</small>
+
+  
+  <div class="card">
+    <h2>Step 2: If-Else Condition</h2>
+    <div class="row">
+      <label for="numberInput">Number:</label>
+      <input id="numberInput" type="number" value="0" />
+      <button onclick="runIfElse()">Run Step 2</button>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <h2>Step 3: Switch Statement (1–7 → Sunday–Saturday)</h2>
+    <div class="row">
+      <label for="dayInput">Day (1–7):</label>
+      <input id="dayInput" type="number" value="3" min="1" max="7" />
+      <button onclick="runSwitch()">Run Step 3</button>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <h2>Step 4: Loops (For, While, Do...While)</h2>
+    <div class="row">
+      <button onclick="runLoops()">Run Step 4</button>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <h2>Step 5: break and continue</h2>
+    <div class="row">
+      <button onclick="runBreak()">Run break demo</button>
+      <button onclick="runContinue()">Run continue demo</button>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <h2>Step 6: Scope and Context</h2>
+    <div class="row">
+      <button onclick="runScope()">Run Step 6</button>
+    </div>
+  </div>
+
+  <h2>Output</h2>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
